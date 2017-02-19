@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95428E45-5F1B-4ED1-87CF-A464278D78AF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RealEstate</RootNamespace>
+    <AssemblyName>RealEstate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\changepassword.sql" />
+    <Content Include="App_Data\RealEstate.mdf" />
+    <Content Include="App_Data\RealEstate_log.ldf">
+      <DependentUpon>RealEstate.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\RealEstate.dll" />
+    <Content Include="bin\RealEstate.pdb" />
+    <Content Include="Buying.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\slide.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="FunZone.aspx" />
+    <Content Include="games\3d_worm.swf" />
+    <Content Include="games\43 seconds.html" />
+    <Content Include="games\43seconds.swf" />
+    <Content Include="games\alien_invasion.html" />
+    <Content Include="games\alien_invasion.swf" />
+    <Content Include="games\apple girl.swf" />
+    <Content Include="games\applegirl.html" />
+    <Content Include="games\ballcage.html" />
+    <Content Include="games\ballcage.swf" />
+    <Content Include="games\beaverbrothers.html" />
+    <Content Include="games\beaverbrothers.swf" />
+    <Content Include="games\bongoballs.html" />
+    <Content Include="games\bongoballs.swf" />
+    <Content Include="games\busyburger.html" />
+    <Content Include="games\busy_burger.swf" />
+    <Content Include="games\diwali.html" />
+    <Content Include="games\DiwaliDhoom.swf" />
+    <Content Include="games\draw_attention.html" />
+    <Content Include="games\draw_his_attention.swf" />
+    <Content Include="games\snake.html" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg_footer.gif" />
+    <Content Include="images\bg_top.gif" />
+    <Content Include="images\bt_close.png" />
+    <Content Include="images\bt_login.png" />
+    <Content Include="images\bt_open.png" />
+    <Content Include="images\bt_register.png" />
+    <Content Include="images\buttons.png" />
+    <Content Include="images\buttons_bg.png" />
+    <Content Include="images\button_bg.png" />
+    <Content Include="images\button_bg_form.png" />
+    <Content Include="images\caption_bg.png" />
+    <Content Include="images\icon1.jpg" />
+    <Content Include="images\icon2.jpg" />
+    <Content Include="images\icon3.jpg" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\img3.jpg" />
+    <Content Include="images\img4.jpg" />
+    <Content Include="images\img5.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo_img.png" />
+    <Content Include="images\marker_1.gif" />
+    <Content Include="images\menu_line.gif" />
+    <Content Include="images\page1_img1.jpg" />
+    <Content Include="images\page1_img2.jpg" />
+    <Content Include="images\page1_img3.jpg" />
+    <Content Include="images\page1_img4.jpg" />
+    <Content Include="images\page1_img5.jpg" />
+    <Content Include="images\page2_img1.jpg" />
+    <Content Include="images\page2_img2.jpg" />
+    <Content Include="images\page2_img3.jpg" />
+    <Content Include="images\page2_img4.jpg" />
+    <Content Include="images\page2_img5.jpg" />
+    <Content Include="images\page3_img1.jpg" />
+    <Content Include="images\page3_img2.jpg" />
+    <Content Include="images\page4_img1.jpg" />
+    <Content Include="images\page4_img2.jpg" />
+    <Content Include="images\page5_img1.jpg" />
+    <Content Include="images\page5_img2.jpg" />
+    <Content Include="images\select.gif" />
+    <Content Include="images\slider1.jpg" />
+    <Content Include="images\slider11.jpg" />
+    <Content Include="images\slider12.jpg" />
+    <Content Include="images\slider13.jpg" />
+    <Content Include="images\slider2.jpg" />
+    <Content Include="images\slider3.jpg" />
+    <Content Include="images\tab_b.png" />
+    <Content Include="images\tab_l.png" />
+    <Content Include="images\tab_m.png" />
+    <Content Include="images\tab_r.png" />
+    <Content Include="js\atooltip.jquery.js" />
+    <Content Include="js\cufon-replace.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\Didact_Gothic_400.font.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery-1.6.js" />
+    <Content Include="js\jquery-1.6.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.jqtransform.js" />
+    <Content Include="js\jquery.nivo.slider.pack.js" />
+    <Content Include="js\jquery.validationEngine-en.js" />
+    <Content Include="js\jquery.validationEngine.js" />
+    <Content Include="js\PIE.htc" />
+    <Content Include="js\pngfix\supersleight-min.js" />
+    <Content Include="js\pngfix\x.gif" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slide.js" />
+    <Content Include="MyPage.aspx" />
+    <Content Include="obj\Debug\RealEstate.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\RealEstate.dll" />
+    <Content Include="obj\Debug\RealEstate.pdb" />
+    <Content Include="propertydetails.aspx" />
+    <Content Include="PropertyReport.aspx" />
+    <Content Include="Temp.aspx" />
+    <Content Include="UsersReport.aspx" />
+    <Content Include="SearchResults.aspx" />
+    <Content Include="Selling.aspx" />
+    <Content Include="Selling1.aspx" />
+    <Content Include="Selling2.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.webservicex.www1\globalweather.wsdl" />
+    <None Include="Web References\net.webservicex.www1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.webservicex.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.webservicex.www\ValidateEmail.disco" />
+    <None Include="Web References\net.webservicex.www1\globalweather.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Web References\net.webservicex.www\ValidateEmail.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buying.aspx.cs">
+      <DependentUpon>Buying.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buying.aspx.designer.cs">
+      <DependentUpon>Buying.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="EditAccount.cs" />
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FunZone.aspx.cs">
+      <DependentUpon>FunZone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FunZone.aspx.designer.cs">
+      <DependentUpon>FunZone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDAL.cs" />
+    <Compile Include="MyPage.aspx.cs">
+      <DependentUpon>MyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyPage.aspx.designer.cs">
+      <DependentUpon>MyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Property.cs" />
+    <Compile Include="propertydetails.aspx.cs">
+      <DependentUpon>propertydetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="propertydetails.aspx.designer.cs">
+      <DependentUpon>propertydetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyDetails1.cs" />
+    <Compile Include="PropertyDetails2.cs" />
+    <Compile Include="PropertyReport.aspx.cs">
+      <DependentUpon>PropertyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyReport.aspx.designer.cs">
+      <DependentUpon>PropertyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDAL.cs" />
+    <Compile Include="SearchDetails.cs" />
+    <Compile Include="Temp.aspx.cs">
+      <DependentUpon>Temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Temp.aspx.designer.cs">
+      <DependentUpon>Temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersReport.aspx.cs">
+      <DependentUpon>UsersReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersReport.aspx.designer.cs">
+      <DependentUpon>UsersReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealEstateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResults.aspx.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResults.aspx.designer.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Selling1.aspx.cs">
+      <DependentUpon>Selling1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Selling1.aspx.designer.cs">
+      <DependentUpon>Selling1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Selling2.aspx.cs">
+      <DependentUpon>Selling2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Selling2.aspx.designer.cs">
+      <DependentUpon>Selling2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selling.aspx.cs">
+      <DependentUpon>Selling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Selling.aspx.designer.cs">
+      <DependentUpon>Selling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\net.webservicex.www1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\net.webservicex.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CrystalReport1.mht" />
+    <None Include="js\PIE.php" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="RealEstateDataSet.xsc">
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RealEstateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealEstateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealEstateDataSet.xss">
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Property.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webservicex.net/globalweather.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.webservicex.www1\</RelPath>
+      <UpdateFromURL>http://www.webservicex.net/globalweather.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>RealEstate_net_webservicex_www1_GlobalWeather</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.webservicex.net/ValidateEmail.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.webservicex.www\</RelPath>
+      <UpdateFromURL>http://www.webservicex.net/ValidateEmail.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>RealEstate_net_webservicex_www_ValidateEmail</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49163</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
